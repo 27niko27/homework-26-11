@@ -1,0 +1,58 @@
+header{
+    .container{
+      
+        max-width: 1170px;
+        width: 100%;
+        margin: 0 auto;
+        height: 100%;
+        display: flex;
+       
+       div{
+            display: flex;
+            align-items: center;
+    
+            h3{
+                justify-content: space-between;
+                margin-left: 25px;
+                font-size: 18px;
+            }
+       }
+       img{
+            display: flex;
+            align-items: center;
+            margin-left: 30px;
+       }
+    }
+}
+.s-1{
+    margin-top: 60px;
+     .container {
+    @include cont;
+    h2{
+        font-size: 25px;
+    }
+    .box1{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 27px;
+    }
+    .box2{
+        display: flex;
+        justify-content: space-between;
+        .txt1{
+            @include mytxt;
+        }
+        .txt2{
+            @include mytxt;
+            border: 2px solid black;
+        }
+        .txt3{
+            @include mytxt;
+            border: 2px solid black;
+        }
+    }
+     }
+    
+}
+
+
