@@ -1,12 +1,7 @@
 header{
     .container{
       
-        max-width: 1170px;
-        width: 100%;
-        margin: 0 auto;
-        height: 100%;
-        display: flex;
-       
+       @include cont;       
        div{
             display: flex;
             align-items: center;
@@ -44,15 +39,59 @@ header{
         }
         .txt2{
             @include mytxt;
-            border: 2px solid black;
+         
         }
         .txt3{
             @include mytxt;
-            border: 2px solid black;
+          
         }
     }
      }
     
 }
-
-
+.s-2{
+    margin-top: 50px;
+   
+    .container{
+        @include cont;
+        display: flex;
+        h2{
+            font-size: 25px;
+        
+          
+        }
+    
+    }
+}
+.container{
+    .s-2d{
+    
+        .s-2i1{
+        
+            margin-top: 20px;
+          margin-bottom: 20px;
+         
+        }
+       }
+       .s-2d2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      .img1{
+margin-top: 20px;
+      }
+      .img2 {
+margin-top: 20px
+      }
+      .img3  {
+margin-top: 20px;
+      }    
+       
+       }
+}
+footer{
+   width: 100%;
+   height: 201px;
+   background-color:rgb(22, 22, 81);
+  
+}
